@@ -1,0 +1,18 @@
+git init 初始化一个仓库
+git add <file><file>...  预提交n个文件 (放至暂存区)
+git commit -m "日志" 提交修改
+git status 查看仓库状态，显示本地修改
+git diff <file> 查看改动
+git log 显示日志
+git log --pretty=oneline 简单显示日志
+HEAD表示当前版本，上一个版本就是HEAD^，上n个版本就是HEAD~n
+git reset --hard HEAD^ 回退到上一个版本
+git reset --hard 版本ID 回退到指定版本
+git reflog 用来记录你的每一次命令
+git checkout -- <file>
+	命令git checkout -- readme.txt意思就是，把readme.txt文件在工作区的修改全部撤销，这里有两种情况：
+
+	一种是readme.txt自修改后还没有被放到暂存区，现在，撤销修改就回到和版本库一模一样的状态；
+
+	一种是readme.txt已经添加到暂存区后，又作了修改，现在，撤销修改就回到添加到暂存区后的状态。
+cat <file> 查看文件内容
