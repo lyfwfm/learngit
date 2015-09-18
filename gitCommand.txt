@@ -16,3 +16,7 @@ git checkout -- <file>
 
 	一种是readme.txt已经添加到暂存区后，又作了修改，现在，撤销修改就回到添加到暂存区后的状态。
 cat <file> 查看文件内容
+pwd 查看当前所在目录
+git remote add origin git@github.com:michaelliao/learngit.git  本地仓库与github仓库关联
+	添加后，远程库的名字就是origin
+把本地库的内容推送到远程，用git push命令，实际上是把当前分支master推送到远程
